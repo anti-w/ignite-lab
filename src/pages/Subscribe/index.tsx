@@ -1,7 +1,9 @@
-import { gql, useMutation } from "@apollo/client";
 import { useState, FormEvent } from "react";
 import { useNavigate } from "react-router-dom";
+
 import Logo from "../../components/Logo";
+import imgUrl from "/src/assets/code-mockup.png";
+
 import { useCreateSubscriberMutation } from "../../graphql/generated";
 
 export const Subscribe = () => {
@@ -71,7 +73,7 @@ export const Subscribe = () => {
           </form>
         </div>
       </div>
-      <img src="/src/assets/code-mockup.png" className="mt-18" alt="" />
+      <img src={imgUrl} className="mt-18" alt="" />
     </div>
   );
 };
